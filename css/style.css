@@ -9,7 +9,12 @@ body {
   object-fit: cover;
   /* Это свойство сохранит пропорции изображения и заполнит контейнер */
 }
-
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .logo-white {
   max-width: 100%;
   /* Логотип не превышает ширину контейнера */
