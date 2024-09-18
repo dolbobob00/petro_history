@@ -965,6 +965,9 @@ a.background-primary:link,
   display: block;
   position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .image-border-radius img {
   border-radius: 3px;

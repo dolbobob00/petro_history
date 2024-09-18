@@ -1,6 +1,6 @@
 
 jQuery(document).ready(function($) {
-  //Responsee tabs
+  //tabs
   $('.tabs').each(function(intex, element) {
     current_tabs = $(this);       
     $('.tab-label').each(function(i) {
@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
   $(".slide-nav-button").click(function() {
     $("body").toggleClass("active-slide-nav");
   });
-  //Responsee eside nav
+  // eside nav
   $('.aside-nav > ul > li ul').each(function(index, element) {
     var count = $(element).find('li').length;
     var content = '<span class="count-number"> ' + count + '</span>';
