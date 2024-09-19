@@ -9,12 +9,14 @@ body {
   object-fit: cover;
   /* Это свойство сохранит пропорции изображения и заполнит контейнер */
 }
+
 .center-absolute {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .logo-white {
   max-width: 100%;
   /* Логотип не превышает ширину контейнера */
@@ -965,6 +967,7 @@ a.background-primary:link,
   display: block;
   position: relative;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -2941,5 +2944,67 @@ video {
 
   nav.background-transparent.background-transparent-hightlight .s-12.l-2 {
     width: 100%;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative
+}
+.container {
+  max-width: 100%;
+  padding: 15px; /* Если нужно добавить отступы */
+  box-sizing: border-box; /* Убедитесь, что padding не выходит за пределы блока */
+}
+/* Оверлей для ПК */
+.scroll-to-top {
+  position: fixed;
+  left: 0;
+  bottom: 1px;
+  /* Размещаем стрелку немного выше нижней части экрана */
+  width: 125px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  /* Прозрачный фон */
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+  /* Чтобы оверлей был сверху */
+  cursor: pointer;
+  opacity: 0.3;
+  /* Едва видимая стрелка */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  /* Стрелка едва видна */
+}
+
+/* Оверлей при наведении */
+.scroll-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Чуть заметный фон при наведении */
+  opacity: 1;
+  /* Стрелка становится полностью видимой */
+  color: rgba(0, 0, 0, 0.8);
+  /* Более контрастный цвет стрелки */
+}
+
+/* Скрыть оверлей на телефонах */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    display: none;
+  }
+}
+h1{
+  font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+      font-size: 35px; /* Размер текста для мобильных устройств */
   }
 }
