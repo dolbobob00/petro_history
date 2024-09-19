@@ -88,7 +88,6 @@ const quizData = [
         ],
         correct: 1 // Правильный ответ — "Купеческо-чиновничий центр был застроен кирпичными зданиями, а окраины были убогими и грязными"
     },
-
 ];
 
 let currentQuestion = 0;
@@ -138,14 +137,15 @@ function loadQuestion() {
 
 function showSummary() {
     document.getElementById('quiz').classList.add('hidden');
-    const summaryEl = document.getElementById('summary');
-    summaryEl.classList.remove('hidden');
+    const summaryEl = document.getElementById('result-text');
     let summaryHTML = `<h2>Результаты: ${correctPicked} / ${quizData.length} </h2>`;
-    results.forEach((result, index) => {
-        summaryHTML += `${result.question}<br> Ваш ответ: ${result.selected}<br> Правильный ответ: ${result.correct}</p>`;
+    results.forEach((result) => {
+        summaryHTML += ` <h2>${result.question} </h2><br>Ваш ответ: <h2>${result.selected}</h2><br>Правильный ответ: <green>${result.correct}</green><br><br>`;
     });
     summaryEl.innerHTML = summaryHTML;
+    document.getElementById('summary').classList.remove('hidden');
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     loadQuestion();  // Загрузка первого вопроса при открытии страницы
 });

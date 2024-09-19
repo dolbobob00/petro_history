@@ -64,13 +64,14 @@
             <header class="section background-dark">
                 <div style="display:flex; justify-content:center; align-items:center; flex-wrap: wrap;">
                     <div>
-                        <h1 class="text-white margin-top-bottom-0" id="top1" style="font-size:5vw; line-height: 1.2;">
+                        <h1 class="text-white margin-top-bottom-0" id="top1" style="font-size:4.5vw; line-height: 1.2;">
                             Тест на знание
                             истории Петропавловска</h1>
                         <h1 class="margin-bottom-0">1897 - 2000<br></h1><br>
-                        <h1 class="text-white margin-top-bottom-0">Пролистните
+                        <h1 class="text-white margin-top-bottom-0" style="font-size:4.5vw; line-height: 1.2;">
+                            Пролистните
                             чуть-чуть ниже.</h1>
-                        <a class="p2" href="test2.html" style="font-size:3vw;">Или хотите отправиться к другому
+                        <a class="p2" href="test2.html" style="font-size:2.5vw;">Или хотите отправиться к другому
                             тесту?</a>
                     </div>
                     <div>
@@ -82,7 +83,6 @@
             <section class="section background-yellow">
                 <h2 class="text-size-60 margin-bottom-40"></h2>
                 <div class="line" id="question-container">
-
                     <h2 class="text-size-40 margin-bottom-30" id="question">=</h2>
                     <hr class="break-small background-primary margin-bottom-30">
                     <p class="margin-bottom-40 text-size-20 containerInfo"></p>
@@ -94,12 +94,12 @@
                             <div class="answer" onclick="selectAnswer(this,3)">Java</div>
                         </div><button class="next-btn" onclick="nextQuestion()">Следующий вопрос</button>
                     </div>
-                    <div id="summary" class="hidden summary"></div><!-- Результат -->
-                    <div id="result-container">
-                        <h2>Результат:</h2>
-                        <p id="result-text"></p>
+                    <div id="summary" class="hidden summary">
+                        <div id="result-container">
+                            <p id="result-text"></p>
+                        </div>
                     </div>
-                </div>
+                </div><!-- Результат -->
                 <div class="line" id="other">
                     <h2 class="text-size-40 margin-bottom-30">Куда отправимся дальше?</h2>
                     <hr class="break-small background-primary margin-bottom-30">
