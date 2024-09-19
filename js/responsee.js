@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
       $('.aside-nav > ul').toggleClass('show-menu', 'fast');
     });
   });  
-  //Responsee nav
+  //Rpnv
   // Add nav-text before top-nav
   $('.top-nav').before('<p class="nav-text"><span></span></p>');   
   $('.top-nav > ul > li ul').each(function(index, element) {
