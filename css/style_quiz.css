@@ -35,7 +35,7 @@
 }
 
 #result-container p {
-  color: #495057;
+  color: hsl(210, 44%, 60%);
   /* Цвет текста */
   font-size: 16px;
   /* Размер шрифта текста */
