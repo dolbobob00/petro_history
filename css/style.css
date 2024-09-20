@@ -9,7 +9,10 @@ body {
   object-fit: cover;
   /* Это свойство сохранит пропорции изображения и заполнит контейнер */
 }
-
+.first-page-top-bar{
+  background-color: #C81010;
+  border-radius: 26px;
+}
 .center-absolute {
   position: absolute;
   top: 50%;
@@ -36,6 +39,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.redAccent {
+  color: #C81010;
 }
 
 p {
@@ -163,7 +170,7 @@ h4.headline,
 }
 
 .transparent-bg {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: #808080e0;
   /* Прозрачный серый фон */
   padding: 10px;
   /* Отступы внутри элемента для более четкого отображения фона */
@@ -2955,11 +2962,15 @@ body {
 body {
   position: relative
 }
+
 .container {
   max-width: 100%;
-  padding: 15px; /* Если нужно добавить отступы */
-  box-sizing: border-box; /* Убедитесь, что padding не выходит за пределы блока */
+  padding: 15px;
+  /* Если нужно добавить отступы */
+  box-sizing: border-box;
+  /* Убедитесь, что padding не выходит за пределы блока */
 }
+
 /* Оверлей для ПК */
 .scroll-to-top {
   position: fixed;
@@ -3000,11 +3011,14 @@ body {
     display: none;
   }
 }
-h1{
+
+h1 {
   font-size: 60px;
 }
+
 @media only screen and (max-width: 768px) {
   h1 {
-      font-size: 35px; /* Размер текста для мобильных устройств */
+    font-size: 35px;
+    /* Размер текста для мобильных устройств */
   }
 }

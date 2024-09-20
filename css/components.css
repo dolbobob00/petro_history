@@ -465,14 +465,7 @@ body.modal-active {
     right: 121%;
     text-align: right;
   } 
-}/*
- * Components CSS - v7 - 2020-09-30
- * https://www.myresponsee.com
- * Copyright 2020, Vision Design - graphic zoo
- * Free to use under the MIT license.
- * 
- * Components CSS includes Tabs, Custom forms, Tooltips, Buttons, Timelines, Modals, Accordions
-*/
+}
 /* Tabs */
 .tab-item {
   background: none repeat scroll 0 0 #fff;

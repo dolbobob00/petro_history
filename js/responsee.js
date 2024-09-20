@@ -203,3 +203,28 @@ jQuery(document).ready(function($) {
     return this.href == url;
   }).parent('li').parent('ul').parent('li').parent('ul').parent('li').parent('ul').addClass('active-aside-item');
 });
+window.addEventListener('scroll', function() {
+  var links = document.querySelectorAll('.main-link');
+  
+  // Если страница прокручена вверх (scrollY равно 0)
+  if (window.scrollY === 0) {
+      links.forEach(function(link) {
+          link.style.backgroundColor = '#C81010';  // Устанавливаем красный фон
+      });
+  } else {
+      links.forEach(function(link) {
+          link.style.backgroundColor = '';  // Убираем фон при прокрутке вниз
+      });
+  }
+});
+function setRedBackgroundForLinks() {
+  var links = document.querySelectorAll('.main-link');
+  links.forEach(function(link) {
+      link.style.backgroundColor = '#C81010';  // Устанавливаем красный фон
+  });
+}
+
+// При загрузке страницы
+window.addEventListener('load', function() {
+  setRedBackgroundForLinks();  // Устанавливаем красный фон при загрузке
+});
