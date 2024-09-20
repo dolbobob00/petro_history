@@ -70,9 +70,7 @@
 .hidden {
   display: none;
 }
-.answer:active {
-  background-color: lightgreen; /* Цвет при касании на мобильных устройствах */
-}
+
 
 .next-btn {
   margin-top: 20px;
