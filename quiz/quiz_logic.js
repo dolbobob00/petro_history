@@ -94,6 +94,7 @@ let currentQuestion = 0;
 let selectedAnswer = null;
 let results = [];
 let correctPicked = 0;
+
 function selectAnswer(element, index) {
     const answers = document.querySelectorAll('.answer');
     answers.forEach(answer => answer.classList.remove('selected'));
@@ -147,5 +148,17 @@ function showSummary() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    loadQuestion();  // Загрузка первого вопроса при открытии страницы
+    loadQuestion(); // Загрузка первого вопроса при открытии страницы
+    
+    // Добавляем обработчики кликов и касаний для ответов
+    document.querySelectorAll('.answer').forEach(answer => {
+        answer.addEventListener('click', function() {
+            selectAnswer(this, Array.from(answer.parentNode.children).indexOf(answer));
+        });
+
+        // Добавляем событие для касания на мобильных устройствах
+        answer.addEventListener('touchstart', function() {
+            selectAnswer(this, Array.from(answer.parentNode.children).indexOf(answer));
+        });
+    });
 });
